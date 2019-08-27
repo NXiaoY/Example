@@ -1,0 +1,18 @@
+@font-face {font-family: "iconfont";
+  src: url('./iconfont/iconfont.eot?t=1556636629130'); /* IE9 */
+  src: url('./iconfont/iconfont.eot?t=1566393622295#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAQ4AAsAAAAACEQAAAPqAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDIgqDaIMkATYCJAMUCwwABCAFhG0HVBssB8iuMTZGes1I6dPZ83oMCdnn9t+sqKp0A8Y4Eg//rfG7b2Z2v6nQxCuJRNJEI5Gg46V9CQkPncY/HS1h/7L76oXcCzASI2Lwev7ssHp67VTK10em5+iiu8qhkZtdvh5Qlp6n4X96LhaeeRkmVOBRDSDzfH7imh9V6FH62DuPtJ9Fgr3JsEJkN92apMz8nGPcfgNfA9EgvsFD57qBRGsG4CbSVOL9tsD3KtD962tyHRwzXfoA84DmVN20xgGOBzSginrhf2H8h3i1Szvs1QTaTctgd7O2uQ25KminQDyVJQ65puRKTWpoFeqSkQWI91CtaZYOeOf/ffxXEICkygBd6+6TGhGV/wKPgCfNBPl5tYynBT+OjE1IIR6U6u9zCP2bHLSriznahdSKkH6lJ/4NjEnz5ayT347/8JKsEDVAkzvBVRIo/EK2VDBMlErIRK3sPBnIfCHrVKAdbXgF8I1gF+fLQigdFiNKvp6klH5+Gy+9kfW8B/P8qfj1wnwG/dgap7913dHaX2y5r5r8OJjnmXUZS36wrbK9hVNHitvzFOxsnRt60Oc4rUlx/768S5PDM2VPmvLeTwDy8lTyac8hdHrmQeZuYJvN2XZ6OiRHr/pLPXXXbHsOwRz8SHNmfDanlP365LPY7F3Y9ZKrpmR5qqrCS/M+N998mLux/z8Y49BU3VqYihan+ott1my0kxo67xso7vl43mBe/EDvQzWLBJykRrLCOdDoC567iCbRT4vBRcx5MXwq7HwBfsshfzbfHX7ZMm2FPsXbmP7B/o93N9GQyfaO7OvZPZEcuO9075BBx8po8u7GzsXjf+e03s1lE7ERuZ3uPPf86FicuM8XXA32pwDjkIYuWEcQngKapTIAIt+xH5Bv/Jo+P7aVT5t/CcZ9W3llrp9LpUby+idolWjN+I28MjribI1F5VVRqOXMZyAsfRwqlxJREtpNMw0x9/s+jnCodTKh1VAMSYspyFotIgt2EyodDqHW6gq021A3vsMAykEUEmDdCkDodQNJt++Q9fqALNhvUBn2G2q9AUO7e0HN2GE5CneVAsdAxPwElgVDJ5aKuQepLSCNqBxNsnx8B1BLduHcrJxsqA50oGP0sUalPMYIJtTQcC2sB6pqYJMawyCwLBtjZll2Nil7UpZgaMjdDRTgMECE8SZgMoFBR9zyjHvu91sAyQgVh9YUVSk7AMoiV4/lypLTAlnH11sVXcs5llGSPAxDYARl0GC10AyoVAbMLG82DAiYLLYeXlOZbLMUacvPml+oPeMKaEdnqgICYRABURAD6mfAUcHm7qRRYyxTBcIiyaBoN9JdallgIxQQAgAA') format('woff2'),
+  url('./iconfont/iconfont.woff?t=1566393622295') format('woff'),
+  url('./iconfont/iconfont.ttf?t=1566393622295') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('./iconfont/iconfont.svg?t=1566393622295#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
