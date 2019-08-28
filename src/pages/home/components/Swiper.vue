@@ -41,15 +41,16 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-@import '~styles/varibles.styl';
+@import '~styles/varibles.styl'
 .wrapper >>> .swiper-pagination-bullet-active
   background #FFF
 .wrapper
   overflow hidden
   width 100%
   height 0
-  padding-bottom 27%
+  padding-bottom 26%
   background #eee
+  touch-action: none
   .swiper-img
     width 100%
 </style>
