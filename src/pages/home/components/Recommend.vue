@@ -11,6 +11,7 @@
                 </div>
             </li>
         </ul>
+        <div class="examine">查看所有产品</div>
     </div>
 </template>
 
@@ -59,4 +60,10 @@ export default {
       border none
       text-align center
       line-height 1.8rem
+.examine
+  padding .2rem 0
+  color #00afc7;
+  font-size 1.28rem
+  line-height 2.6rem
+  text-align center
 </style>

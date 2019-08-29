@@ -4,6 +4,8 @@
     <home-header :city="city"></home-header>
     <home-swiper :list="swiperList"></home-swiper>
     <home-icons :list="iconList"></home-icons>
+    <home-location :city="city"></home-location>
+    <home-goddess ></home-goddess>
     <home-recommend :list="recommendList"></home-recommend>
     <home-weekend :list="weekendList"></home-weekend>
   </div>
@@ -13,6 +15,8 @@
 import HomeHeader from './components/Herder'
 import HomeSwiper from './components/Swiper'
 import HomeIcons from './components/Icons'
+import HomeLocation from './components/Location'
+import HomeGoddess from './components/Goddess'
 import HomeRecommend from './components/Recommend'
 import HomeWeekend from './components/Weekend'
 import axios from 'axios'
@@ -22,6 +26,8 @@ export default {
     HomeHeader,
     HomeSwiper,
     HomeIcons,
+    HomeLocation,
+    HomeGoddess,
     HomeRecommend,
     HomeWeekend
   },
