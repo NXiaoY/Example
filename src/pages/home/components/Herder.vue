@@ -18,7 +18,7 @@ export default {
 @import '~styles/varibles.styl'
   .header
     display flex
-    line-height 4rem
+    line-height 3.8rem
     background $bgColor
     color #fff
     overflow hidden
@@ -32,7 +32,7 @@ export default {
       flex 1
       background #fff
       border-radius .3rem
-      margin-top .5rem
+      margin-top .4rem
       padding-left 1rem
       height 3rem
       color #999
