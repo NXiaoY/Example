@@ -2,7 +2,7 @@
     <div>
         <div class="title">热销推荐</div>
         <ul>
-            <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+            <li class="item border-bottom" v-for="item of list" :key="item.id">
                 <img class="item-img" :src="item.imgUrl" alt="">
                 <div class="item-info">
                     <p class="item-title">{{item.title}}</p>
@@ -17,25 +17,8 @@
 <script>
 export default {
   name: 'HomeWeekend',
-  data () {
-    return {
-      recommendList: [{
-        id: '01',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1505/90/90b849894982d934.water.jpg_200x200_6c7dbab0.jpg',
-        title: '茂名潜梦岛海洋王国（原放鸡岛）',
-        desc: '金秋出现每天好几次每天抢购'
-      }, {
-        id: '02',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/201403/07/3ab9e822a4bcdd13d145312a8b268317.jpg_200x200_198ed553.jpg',
-        title: '浪漫海岸度假区',
-        desc: '金秋出现每天好几次每天抢购'
-      }, {
-        id: '03',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/201212/24/348debe79e28502493835fbb.png_200x200_015180ac.png',
-        title: '御水古温泉',
-        desc: '金秋出现每天好几次每天抢购'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>

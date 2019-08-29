@@ -21,55 +21,16 @@ export default {
     return {
       swiperOption: {
         //   传值  小圆点
-        pagination: '.swiper-pagination'
-      },
-      iconList: [{
-        id: '01',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-        desc: '景点门票'
-      }, {
-        id: '02',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png',
-        desc: '茂名必游'
-      }, {
-        id: '03',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/27/dac2bcf9added702.png',
-        desc: '海滨海岛'
-      }, {
-        id: '04',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png',
-        desc: '森林公园'
-      }, {
-        id: '05',
-        imgUrl: 'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20194/bda58ffc3016edad84e656e8a94b0321.png',
-        desc: '广州融创'
-      }, {
-        id: '06',
-        imgUrl: 'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20194/3a0879f224e0aca97843bff78cabac3a.png',
-        desc: '放鸡岛'
-      }, {
-        id: '07',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/f7/1d29fae36b0f3602.png',
-        desc: '浪漫海岸'
-      }, {
-        id: '08',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/87/20656da0ac042002.png',
-        desc: '玻璃栈道'
-      }, {
-        id: '09',
-        imgUrl: 'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20193/a40ee278d67000f2a29d2e20f6a029b3.png',
-        desc: '自然风光'
-      }, {
-        id: '10',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/b1/528a9e80403b8c02.png',
-        desc: '玩转长隆'
-      }]
+        pagination: '.swiper-pagination',
+        // 轮播图不自动滚动
+        autoplay: false
+      }
     }
   },
   computed: {
     pages () {
       const pages = []
-      this.iconList.forEach((item, index) => {
+      this.list.forEach((item, index) => {
         const page = Math.floor(index / 8)
         if (!pages[page]) {
           pages[page] = []
@@ -78,6 +39,9 @@ export default {
       })
       return pages
     }
+  },
+  props: {
+    list: Array
   }
 }
 </script>

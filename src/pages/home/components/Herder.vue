@@ -4,13 +4,17 @@
         <div class="iconfont back-icon">&#xe601;</div>
       </div>
       <div class="header-input"><span class="iconfont input-icon">&#xe600;</span>内容</div>
-      <div class="header-right">城市<span class="iconfont arrow-icon">&#xe602;</span></div>
+      <div class="header-right">{{this.city}}<span class="iconfont arrow-icon">&#xe602;</span></div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HomeHeader'
+  name: 'HomeHeader',
+  // 接收 ajax 传过来的数据
+  props: {
+    city: String
+  }
 }
 </script>
 
