@@ -1,10 +1,10 @@
 <template>
    <div>
         <div class="goddess">
-            <div class="goddess-icon" v-for="item of goddessList" :key="item.id">
+            <div class="goddess-icon border-right border-bottom" v-for="item of goddessList" :key="item.id">
                 <div class="goddess-info">
-                    <p class="goddess-title">{{item.title}}</p>
-                    <p class="goddess-desc">{{item.desc}}</p>
+                  <p class="goddess-title">{{item.title}}</p>
+                  <p class="goddess-desc">{{item.desc}}</p>
                 </div>
                 <img class="goddess-img" :src="item.imgUrl" alt="">
             </div>
@@ -53,7 +53,7 @@ export default {
 .goddess
   overflow hidden
   height 0
-  padding-bottom 40%
+  padding-bottom 40.5%
   .goddess-icon
     overflow hidden
     float left
@@ -61,6 +61,7 @@ export default {
     height 0
     padding-bottom 20%
     display flex
+    border-bottom 1px solid #eaeaea
     .goddess-img
       width 4.5rem
       height 4.5rem

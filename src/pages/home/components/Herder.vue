@@ -4,7 +4,9 @@
         <div class="iconfont back-icon">&#xe601;</div>
       </div>
       <div class="header-input"><span class="iconfont input-icon">&#xe600;</span>内容</div>
-      <div class="header-right">{{this.city}}<span class="iconfont arrow-icon">&#xe602;</span></div>
+      <router-link to="/city">
+        <div class="header-right">{{this.city}}<span class="iconfont arrow-icon">&#xe602;</span></div>
+      </router-link>
   </div>
 </template>
 
@@ -22,8 +24,8 @@ export default {
 @import '~styles/varibles.styl'
   .header
     display flex
-    line-height 3.8rem
-    background $bgColor
+    line-height $harderHeight
+    background $harderHeight
     color #fff
     overflow hidden
     .header-left
@@ -48,6 +50,7 @@ export default {
       text-align center
       font-size 1.3rem
       padding 0 .6rem
+      color #fff
       .arrow-icon
         font-size 1.5rem
 </style>
