@@ -25,7 +25,7 @@ export default {
   .header
     display flex
     line-height $harderHeight
-    background $harderHeight
+    background $bgColor
     color #fff
     overflow hidden
     .header-left
