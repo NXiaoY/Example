@@ -1,7 +1,7 @@
 <template>
    <div>
         <div class="goddess">
-            <div class="goddess-icon border-right border-bottom" v-for="item of goddessList" :key="item.id">
+            <div class="goddess-icon border-right" v-for="item of goddessList" :key="item.id">
                 <div class="goddess-info">
                   <p class="goddess-title">{{item.title}}</p>
                   <p class="goddess-desc">{{item.desc}}</p>
