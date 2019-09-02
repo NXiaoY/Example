@@ -11,11 +11,11 @@
 </template>
 
 <script>
+import {mapState} from 'vuex'
 export default {
   name: 'HomeHeader',
-  // 接收 ajax 传过来的数据
-  props: {
-    city: String
+  computed: {
+    ...mapState(['city'])
   }
 }
 </script>
@@ -51,6 +51,7 @@ export default {
       font-size 1.3rem
       padding 0 .6rem
       color #fff
+      min-width 0
       .arrow-icon
         font-size 1.5rem
 </style>

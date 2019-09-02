@@ -1,7 +1,7 @@
 <template>
    <div>
         <div class="locationbox">
-        <div class="location border-right">{{this.city}}<span class="iconfont arrow-icon">&#xe602;</span></div>
+        <div class="location border-right">{{this.currentCity}}<span class="iconfont arrow-icon">&#xe602;</span></div>
         <div class="location">旅游必玩<span class="iconfont arrow-icon">&#xe602;</span></div>
     </div>
     <div class="h"></div>
@@ -9,10 +9,24 @@
 </template>
 
 <script>
+import {mapState, mapMutations} from 'vuex'
 export default {
   name: 'HomeLocation',
   props: {
     city: String
+  },
+  computed: {
+    ...mapState({
+      currentCity: 'city'
+    })
+  },
+  methods: {
+    handleCityclick (city) {
+      // this.$store.commit('changeCity', city)
+      this.changeCity(city)
+      this.$router.push('/')
+    },
+    ...mapMutations(['changeCity'])
   }
 }
 </script>

@@ -43,6 +43,8 @@ export default {
 @import '~styles/varibles.styl'
 .wrapper >>> .swiper-pagination-bullet-active
   background #FFF
+.wrapper >>> .swiper-pagination-bullets
+  bottom 4px
 .wrapper
   overflow hidden
   width 100%

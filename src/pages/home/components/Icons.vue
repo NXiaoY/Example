@@ -52,6 +52,8 @@ export default {
 .icons >>> .swiper-container
   height 0
   padding-bottom 50%
+.icons >>> .swiper-pagination-bullets
+  bottom 5px
 .icons
   overflow hidden
   height 0
