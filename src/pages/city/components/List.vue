@@ -26,7 +26,7 @@
                 <div class="item-list">
                     <div class="item border-bottom"
                       v-for="innerItem of item"
-                      :key="innerItem.code"
+                      :key="innerItem.id"
                       @click="handleCityclick(innerItem.name)"
                     >{{innerItem.name}}</div>
                 </div>
@@ -58,9 +58,6 @@ export default {
     },
     ...mapMutations(['changeCity'])
   },
-  mounted () {
-    this.scroll = new Bscroll(this.$refs.wrapper)
-  },
   watch: {
     letter () {
       if (this.letter) {
@@ -68,6 +65,9 @@ export default {
         this.scroll.scrollToElement(element)
       }
     }
+  },
+  mounted () {
+    this.scroll = new Bscroll(this.$refs.wrapper)
   }
 }
 </script>

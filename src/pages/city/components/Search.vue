@@ -61,7 +61,6 @@ export default {
   },
   methods: {
     handleCityclick (city) {
-      // this.$store.commit('changeCity', city)
       this.changeCity(city)
       this.$router.push('/')
     },
