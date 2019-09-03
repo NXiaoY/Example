@@ -1,7 +1,7 @@
 <template>
   <div class="header">
       <div class="header-left">
-        <div class="iconfont back-icon">&#xe601;</div>
+        <div class="iconfont back-icon">&#xe743;</div>
       </div>
       <div class="header-input"><span class="iconfont input-icon">&#xe600;</span>内容</div>
       <router-link to="/city">

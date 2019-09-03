@@ -1,8 +1,8 @@
 <template>
    <div>
         <div class="locationbox">
-        <div class="location border-right">{{this.currentCity}}<span class="iconfont arrow-icon">&#xe602;</span></div>
-        <div class="location">旅游必玩<span class="iconfont arrow-icon">&#xe602;</span></div>
+        <div class="location border-right">{{this.currentCity}}<span class="iconfont arrow-icon">&#xe604;</span></div>
+        <div class="location">旅游必玩<span class="iconfont arrow-icon">&#xe605;</span></div>
     </div>
     <div class="h"></div>
    </div>
@@ -39,6 +39,9 @@ export default {
   display box
   width 100%
   background-color #fff
+  .arrow-icon
+    color #999
+    padding 0 .2rem
   .location
     overflow hidden
     -webkit-box-flex 1
