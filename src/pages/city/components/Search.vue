@@ -75,8 +75,9 @@ export default {
 <style lang="stylus" scoped>
 @import '~styles/varibles.styl'
 @import '~styles/mixins.styl'
+@import '~styles/gradual.styl'
 .search
-  background $bgColor
+  gradual()
   padding 0 .5rem
   height 2.5rem
   .search-input

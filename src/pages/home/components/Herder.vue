@@ -1,8 +1,8 @@
 <template>
   <div class="header">
-      <div class="header-left">
+      <router-link tag="div" to="/my" class="header-left">
         <div class="iconfont back-icon">&#xe743;</div>
-      </div>
+      </router-link>
       <div class="header-input"><span class="iconfont input-icon">&#xe600;</span>内容</div>
       <router-link to="/city">
         <div class="header-right">{{this.city}}<span class="iconfont arrow-icon">&#xe602;</span></div>
@@ -22,12 +22,13 @@ export default {
 
 <style lang="stylus" scoped>
 @import '~styles/varibles.styl'
+@import '~styles/gradual.styl'
   .header
     display flex
     line-height $harderHeight
-    background $bgColor
     color #fff
     overflow hidden
+    gradual()
     .header-left
       float left
       width 3.8rem
@@ -37,12 +38,12 @@ export default {
     .header-input
       flex 1
       background #fff
-      border-radius .3rem
-      margin-top .4rem
+      border-radius 5rem
+      margin-top .5rem
       padding-left 1rem
-      height 3rem
+      height 2.8rem
       color #999
-      line-height 3rem
+      line-height 2.8rem
       .input-icon
         padding 0 .6rem 0 0
     .header-right

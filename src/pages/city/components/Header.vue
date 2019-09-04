@@ -15,6 +15,7 @@ export default {
 
 <style lang="stylus" scoped>
 @import '~styles/varibles.styl'
+@import '~styles/gradual.styl'
 .header
   overflow hidden
   position relative
@@ -22,8 +23,8 @@ export default {
   line-height $harderHeight
   text-align center
   color #ffffff
-  background $bgColor
   font-size 1.3rem
+  gradual()
   .header-back
     position absolute
     width 3.8rem
