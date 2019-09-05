@@ -26,5 +26,9 @@ export default new Router({
       name: 'My',
       component: My
     }
-  ]
+  ],
+  // 每次进到页面的时候，始终位于最顶部
+  scrollBehavior (to, from, savedPosition) {
+    return {x: 0, y: 0}
+  }
 })
