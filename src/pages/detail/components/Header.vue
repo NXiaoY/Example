@@ -3,15 +3,17 @@
         <router-link tag="div" to="/" class="header-abs" v-show="showAbs">
             <div class="iconfont header-back">&#xe601;</div>
         </router-link>
-        <router-link tag="div" to="/" class="header-fixed" v-show="!showAbs" :style="opacityStyle">
-            <div class="iconfont header-fixed-back">&#xe601;</div>
-            景点详情
-        </router-link>
-        <div class="ccc"></div>
+        <fade-animation>
+          <router-link tag="div" to="/" class="header-fixed" v-show="!showAbs" :style="opacityStyle">
+              <div class="iconfont header-fixed-back">&#xe601;</div>
+              景点详情
+          </router-link>
+        </fade-animation>
     </div>
 </template>
 
 <script>
+import FadeAnimation from 'common/fade/FadeAnimation'
 export default {
   name: 'DetailHeader',
   data () {
@@ -21,6 +23,9 @@ export default {
         opacity: 0
       }
     }
+  },
+  components: {
+    FadeAnimation
   },
   methods: {
     handleScroll () {
