@@ -7,7 +7,7 @@
             <div class="iconfont header-fixed-back">&#xe601;</div>
             景点详情
         </router-link>
-        <div class="content"></div>
+        <div class="ccc"></div>
     </div>
 </template>
 
@@ -48,8 +48,6 @@ export default {
 <style lang="stylus" scoped>
 @import '~styles/varibles.styl'
 @import '~styles/mixins.styl'
-.content
-  height 60rem
 .header-abs
   position absolute
   left 1rem
@@ -64,6 +62,7 @@ export default {
     color #fff
     font-size 1.5rem
 .header-fixed
+  z-index 2
   position fixed
   top 0
   left 0

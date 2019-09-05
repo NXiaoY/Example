@@ -1,7 +1,7 @@
 <template>
     <div class="header">
         <div class="header-icon">
-            <img class="header-img" src="https://www.jq22.com/tx/20.png" alt="">
+            <img class="header-img" src="https://thirdqq.qlogo.cn/qqapp/100402580/CC0027C947151A98AEDFDFBF557812EF/100" alt="">
         </div>
         <div class="item-info">
             <p class="item-title">摸了喵要洗手</p>
